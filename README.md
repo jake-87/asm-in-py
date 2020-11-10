@@ -13,7 +13,10 @@ I don't own a windows machine, so idk
 
 # Contributing: 
 Just make a pull request. I will test everything, and merge/reject as suitable.
+
 URGENT PRs:
+
 Makefile
+
 `int`, but only `int 0x80` right now.
 
