@@ -1,10 +1,10 @@
-data = [0] * 100
 from parse import parse
 try:
     import cfg
     cfg.breakvar = 0
+    cfg.data = [0]*100
 except:
-    print("Error: varable cannot be imported. Make sure that  cfg.py exists.")
+    print("Error: varables cannot be imported. Make sure that  cfg.py exists and is in the same directory as main.py")
 lines = []
 while True:
     line = input()
@@ -20,11 +20,12 @@ while len(code)>i:
     if cfg.breakvar == 1:
       break
     else:
-      parse(code,i,data)
+      parse(code,i,cfg.data)
       print(code[i])
     i=i+1
 if cfg.breakvar==0:
     while True:
         pass
 else:
+    print(cfg.data)
     print("EOF")
