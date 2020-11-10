@@ -26,6 +26,3 @@ while len(code)>i:
 if cfg.breakvar==0:
     while True:
         pass
-else:
-    print(cfg.data)
-    print("EOF")
