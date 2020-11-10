@@ -16,7 +16,7 @@ text = ' '.join(lines)
 text=text.replace(","," ")
 code=text.split()
 i=0
-while len(code)>i:
+for x in enumerate(code):
     if cfg.breakvar == 1:
       break
     else:

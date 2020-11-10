@@ -1,6 +1,5 @@
 import cfg
 def parse(code,i,data):
-  print(code[i])
   if code[i] == "mov":
     mov(code,i,data)
 datadict = {
