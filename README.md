@@ -13,6 +13,10 @@ I don't own a windows machine, so idk
 
 # Contributing: 
 Just make a pull request. I will test everything, and merge/reject as suitable.
+Naming releases: 
+ (1,2,etc).## : Major releases. Only used for major changes to the codebase.
+ #.(1,2,etc)# : Minor releases. Used for most changes over 2 lines of code.
+ #.#(1,2,etc) : Patches. Only for bugfixes.
 
 URGENT PRs:
 
