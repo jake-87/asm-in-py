@@ -3,7 +3,6 @@ def parse(code,i,data):
   print(code[i])
   if code[i] == "mov":
     mov(code,i,data)
-  pass
 datadict = {
   "eax":0,
   "ebx":1,
@@ -16,4 +15,3 @@ datadict = {
 }
 def mov(code,i,data):
   cfg.data[datadict.get(code[i+1])] = code[i+2]
-  
