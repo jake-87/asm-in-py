@@ -15,5 +15,5 @@ datadict = {
   "var4":7
 }
 def mov(code,i,data):
-  x = code[i+1]
-  data[datadict.get(code[i+1])] = datadict.get(code[i+2])
+  cfg.data[datadict.get(code[i+1])] = code[i+2]
+  
