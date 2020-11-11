@@ -22,7 +22,7 @@ Naming releases:
  
  #.#(1,2,etc) : Patches. Only for bugfixes.
 
-## URGENT PRs:
+## URGENT PRs
 
 Makefile
 
