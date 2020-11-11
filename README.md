@@ -3,7 +3,7 @@ An implementation of intel x86 32 bit  assembly in python 3.
 
 ## Install
 Linux:
-Simply extract the files into a directory, and run ```python main.py```. Still working on a makefile :p 
+Simply extract the files into a directory, and run ```python main.py```. Still working on an install script :p
 
 MacOS:
 Same as Linux, make sure that you have python installed.
