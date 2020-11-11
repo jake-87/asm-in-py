@@ -28,3 +28,19 @@ Makefile
 
 `int`, but only `int 0x80` right now.
 
+## Basics:
+So far the project is basically the same as x86, with a few differences:
+
+1. Variables are assigned via `mov (varname),(content)`. This is due to the fact that seperate .data and .text sections would  be complicated for a small project. 
+
+2. Varables cannot contain spaces __for now__, as they require some clever thinking that i'm  still working on.
+
+3. The end of the file is declared via just typing in EOF on its own line
+
+So for an example, here is "Hello!"
+mov eax,4 ;set-syscall-to-print
+mov ecx,Hello! ;set-what-to-print
+mov edx,6 ;length-of-ecx
+int 0x80 ;call-the-syscall
+mov eax,1 ;set-syscall-to-exit
+int 0x80 ;call-syscall
