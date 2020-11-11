@@ -1,5 +1,4 @@
 from parse import parse
-import readline
 try:
     import cfg
     cfg.breakvar = 0
