@@ -23,7 +23,7 @@ def interrupt(code,i,data):
     #print(data[0])
     if str(data[0]) == "4" or 4:
       doprint(code,i,data)
-    if str(data[0]) == "4":
+    if str(data[0]) == "1":
       cfg.breakvar = 1
       cfg.exitcode = data[1]
 def doprint(code,i,data):
@@ -31,3 +31,4 @@ def doprint(code,i,data):
   #print(data[3], " is  data[3]")
   if str(len(cfg.data[2])) == str(cfg.data[3]):
     print(cfg.data[2])
+
