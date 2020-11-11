@@ -2,6 +2,8 @@ import cfg
 def parse(code,i,data):
   if code[i] == "mov":
     mov(code,i,data)
+  if code[i] ==  "int":
+    interrupt(code,i,data)
 datadict = {
   "eax":0,
   "ebx":1,
