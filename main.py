@@ -3,7 +3,6 @@ try:
     import cfg
     cfg.breakvar = 0
     cfg.data = [0]*100
-    cfg.exitcode = 0
 except:
     print("Error: varables cannot be imported. Make sure that  cfg.py exists and is in the same directory as main.py")
 lines = []
@@ -22,8 +21,8 @@ for x in enumerate(code):
       break
     else:
       parse(code,i,cfg.data)
+      print(code[i])
     i=i+1
 if cfg.breakvar==0:
     while True:
         pass
-print("Exited with code ",cfg.exitcode)
