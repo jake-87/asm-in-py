@@ -31,4 +31,3 @@ def doprint(code,i,data):
   #print(data[3], " is  data[3]")
   if str(len(cfg.data[2])) == str(cfg.data[3]):
     print(cfg.data[2])
-
