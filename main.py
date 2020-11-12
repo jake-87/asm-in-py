@@ -18,12 +18,11 @@ text = ' '.join(lines)
 text=text.replace(","," ")
 code=text.split()
 i=0
-for x in enumerate(code):
+for i in range(len(code)):
     if cfg.breakvar == 1:
       break
     else:
       parse(code,i,cfg.data)
-    i=i+1
     f.write(str(code[i]))
     f.write(" ")
 if cfg.breakvar==0:
