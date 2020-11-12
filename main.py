@@ -1,5 +1,4 @@
 from parse import parse
-import readline
 try:
     import cfg
     cfg.breakvar = 0
@@ -8,6 +7,7 @@ try:
 except:
     print("Error: varables cannot be imported. Make sure that  cfg.py exists and is in the same directory as main.py")
 lines = []
+f = open("myfile.txt", "w+")
 while True:
     line = input()
     if line != "EOF":
@@ -24,7 +24,10 @@ for x in enumerate(code):
     else:
       parse(code,i,cfg.data)
     i=i+1
+    f.write(str(code[i]))
+    f.write(" ")
 if cfg.breakvar==0:
     while True:
         pass
+f.close()
 print("Exited with code ",cfg.exitcode)
