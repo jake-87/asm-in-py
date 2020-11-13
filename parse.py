@@ -18,7 +18,7 @@ def mov(code,i,data):
   cfg.data[datadict.get(code[i+1])] = code[i+2]
 def interrupt(code,i,data):
   if code[i+1] == "0x80" or "128":
-    if str(data[0]) == "4" or 4:
+    if str(data[0]) == "4":
       doprint(code,i,data)
     if str(data[0]) == "1":
       cfg.breakvar = 1
